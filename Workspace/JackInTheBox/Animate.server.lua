@@ -1,4 +1,4 @@
--- humanoidAnimatePlayEmote.lua
+-- not my own code, is the script used by roblox to use animations, I moved it from client to server to allow the animation to be seen for all players.
 local Character = script.Parent
 local Humanoid = Character:WaitForChild("Humanoid")
 local pose = "Standing"
