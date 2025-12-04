@@ -3,10 +3,7 @@ local anim = Instance.new("Animation")
 local hum = head.Parent.Humanoid
 local db = false
 
-
-
-
-head.Touched:Connect(function(hit)
+head.Touched:Connect(function(hit) -- when a player touches the head, the player gets killed
 	local player = game:GetService("Players"):GetPlayerFromCharacter(hit.Parent)
 	if db == false then
 		if player then
