@@ -6,7 +6,7 @@ local track = hum:LoadAnimation(anim)
 local db = false
 local slamsound = hitbox.slamsound
 
-hitbox.Touched:Connect(function(hit)
+hitbox.Touched:Connect(function(hit) -- detects when player is near (aka touching the hitbox), and plays the slam animation.
 	local player = game:GetService("Players"):GetPlayerFromCharacter(hit.Parent)
 	if db == false then
 		if player then
